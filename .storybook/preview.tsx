@@ -1,7 +1,16 @@
 import type { Preview } from "@storybook/nextjs-vite";
+import React from "react";
+import { LanguageProvider } from "../lib/language";
 import "../app/globals.css";
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <LanguageProvider>
+        <Story />
+      </LanguageProvider>
+    ),
+  ],
   parameters: {
     backgrounds: {
       default: "navy",

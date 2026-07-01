@@ -19,7 +19,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`bg-navy-light border border-gold/20 overflow-hidden group hover:border-gold/50 transition-colors duration-300 ${className}`}
+      className={`bg-navy-light border border-gold/20 overflow-hidden group transition-all duration-300 hover:border-gold/50 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-black/30 ${className}`}
     >
       {imageUrl ? (
         <div className="relative h-52 overflow-hidden">

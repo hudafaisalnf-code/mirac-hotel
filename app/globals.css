@@ -16,11 +16,31 @@ body {
   color: #ffffff;
 }
 
+::selection {
+  background-color: #BFA06A;
+  color: #0D2043;
+}
+
 @layer components {
   .section-pad {
     @apply py-24 px-4 md:px-8 lg:px-16;
   }
   .gold-line {
     @apply w-16 h-px bg-gold;
+  }
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out hover:-translate-y-1;
+  }
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
   }
 }

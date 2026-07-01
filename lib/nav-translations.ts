@@ -1,0 +1,56 @@
+export const navTranslations = {
+  ar: {
+    brandName: "MIRAK",
+    brandTagline: "HOTEL SUITES",
+    nav: {
+      home: "الرئيسية",
+      rooms: "الغرف",
+      amenities: "الخدمات",
+      pricing: "الأسعار",
+      contact: "اتصل بنا",
+    },
+    bookNow: "احجز الآن",
+    switchTo: "English",
+    menuToggle: "فتح القائمة",
+    footer: {
+      about:
+        "ملاذ فخامة وهدوء في قلب بورتسودان، حيث تُصمم كل إقامة بعناية فائقة لتناسب المسافر المميز.",
+      navigate: "روابط سريعة",
+      contactTitle: "تواصل معنا",
+      address1: "شارع الكورنيش",
+      address2: "بورتسودان، ولاية البحر الأحمر، السودان",
+      phone: "+249 123 456 789",
+      email: "info@mirakhotel.sd",
+      rights: "© 2026 فندق ميراك. جميع الحقوق محفوظة.",
+      crafted: "صُنع بامتياز",
+    },
+    whatsapp: "تواصل عبر واتساب",
+  },
+  en: {
+    brandName: "MIRAK",
+    brandTagline: "HOTEL SUITES",
+    nav: {
+      home: "Home",
+      rooms: "Rooms",
+      amenities: "Amenities",
+      pricing: "Pricing",
+      contact: "Contact",
+    },
+    bookNow: "Book Now",
+    switchTo: "العربية",
+    menuToggle: "Toggle menu",
+    footer: {
+      about:
+        "A sanctuary of luxury and serenity in the heart of Port Sudan, where every stay is crafted to perfection for the discerning traveler.",
+      navigate: "Navigate",
+      contactTitle: "Contact",
+      address1: "Corniche Street",
+      address2: "Port Sudan, Red Sea State, Sudan",
+      phone: "+249 123 456 789",
+      email: "info@mirakhotel.sd",
+      rights: "© 2026 Mirak Hotel. All rights reserved.",
+      crafted: "Crafted with excellence",
+    },
+    whatsapp: "Chat on WhatsApp",
+  },
+} as const;
