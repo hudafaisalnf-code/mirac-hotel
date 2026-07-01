@@ -129,6 +129,9 @@ const copy = {
   },
 };
 
+const DEFAULT_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1727993401095-50cd84abb41b?q=80&w=1920&auto=format&fit=crop";
+
 export default function HomeView({ data }: { data: HomeData | null }) {
   const { lang, isRTL } = useLanguage();
   const c = copy[lang];
@@ -149,22 +152,19 @@ export default function HomeView({ data }: { data: HomeData | null }) {
     <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden bg-navy">
-        {heroImageUrl ? (
-          <Image
-            src={heroImageUrl}
-            alt=""
-            fill
-            priority
-            className="object-cover"
-          />
-        ) : (
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `radial-gradient(circle at ${glowSideX}% 62%, rgba(191,160,106,0.32), transparent 42%), radial-gradient(circle at ${glowSideX}% 88%, rgba(191,160,106,0.20), transparent 35%), radial-gradient(circle at ${textSideX}% 38%, rgba(0,0,0,0.55), transparent 55%), linear-gradient(to bottom, #060d1c 0%, #0D2043 45%, #060d1c 100%)`,
-            }}
-          />
-        )}
+        <Image
+          src={heroImageUrl ?? DEFAULT_HERO_IMAGE}
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at ${glowSideX}% 62%, rgba(191,160,106,0.28), transparent 42%), radial-gradient(circle at ${textSideX}% 40%, rgba(6,13,28,0.78), transparent 58%)`,
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/20" />
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 py-32">
